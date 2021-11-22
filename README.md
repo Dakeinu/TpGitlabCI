@@ -47,5 +47,26 @@
         
         a) Lors de l’installation de Gitlab dans Docker vous allez pouvoir choisir une adresse pour votre gitlab. Vous pouvez utiliser gitlab.example.com
 
+        version: '3.2'
+            services:
+                web:
+                    image: gitlab/gitlab-ce:latest
+                    restart: always
+                    hostname: 'gitlab.zods.com'
+                    environment:
+                    GITLAB_OMNIBUS_CONFIG: |
+                        external_url 'https://gitlab.zods.com'
+                    ports:
+                    - '80:80'
+                    - '443:443'
+                    volumes:
+                    - $GITLAB_HOME/config:/etc/gitlab
+                    - $GITLAB_HOME/logs:/var/log/gitlab
+                    - $GITLAB_HOME/data:/var/opt/gitlab
+
+
         b) Ensuite modifier votre fichier /etc/hosts local et ajouter la ligne suivante afin que l’adresse gitlab.example.com dirige bien vers votre VM :
-            <IP_VM> gitlab.example.com
+            
+            nano /etc/hosts
+
+            163.172.241.101 gitlab.zods.com
