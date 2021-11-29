@@ -72,3 +72,7 @@
             nano /etc/hosts
 
             127.0.0.1 gitlab.zods.com
+
+    6. sudo docker exec -it tpgitlabci_web_1 grep 'Password:' /etc/gitlab  initial_root_password
+
+        Te2ezMPuBAfgvbMsi42+aHbC1Et42PLC4gyCYPJxtVc=
