@@ -76,3 +76,7 @@
     6. sudo docker exec -it tpgitlabci_web_1 grep 'Password:' /etc/gitlab  initial_root_password
 
         Te2ezMPuBAfgvbMsi42+aHbC1Et42PLC4gyCYPJxtVc=
+
+    7. ssh keygen -t ed25519
+
+    
