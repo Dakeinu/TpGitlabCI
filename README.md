@@ -1,4 +1,4 @@
-# TpGitlabCI
+# TpGitlabCI - Arnal Theo - Kopenkin Dmitri - Falcati Rémi
 
 2. Identifiants
 
@@ -78,6 +78,13 @@
     Te2ezMPuBAfgvbMsi42+aHbC1Et42PLC4gyCYPJxtVc=
 
 6.  ssh keygen -t ed25519
+
+7. Création d'un runner gitlab
+
+![](https://cdn.discordapp.com/attachments/921065068869873714/921445106454773830/runner.png)
+![](https://cdn.discordapp.com/attachments/921065068869873714/921445088746409994/pipelines.png)
+
+Ajout du token pour que cela fonctionne : ![](https://cdn.discordapp.com/attachments/921065068869873714/921445128692957244/token.png)
 
 ## Install & Configure Jenkins
 
