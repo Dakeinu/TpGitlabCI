@@ -50,10 +50,10 @@
         web:
             image: gitlab/gitlab-ce:latest
             restart: always
-            hostname: 'gitlab.zods.com'
+            hostname: 'gitlab.devops.com'
             environment:
                 GITLAB_OMNIBUS_CONFIG: |
-                external_url 'https://gitlab.zods.com'
+                external_url 'https://gitlab.devops.com'
             ports:
                 - '80:80'
                 - '443:443'
